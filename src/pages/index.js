@@ -34,6 +34,9 @@ const Products = ({product}) => {
       setLoading(false)
     }
   }
+  const handleButton = async () => {
+    window.location.href = "https://www.google.com";
+  }
 
   return (
     <div>
@@ -41,6 +44,11 @@ const Products = ({product}) => {
       <p>{product.description}</p>
       <p>Price: {product.price} {product.currency}</p>
       <button onClick={coinbase} disabled={loading}> Pay With Crtpto </button>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <button onClick={handleButton} disabled={loading}>go to google </button>
     </div>
   )
 }
